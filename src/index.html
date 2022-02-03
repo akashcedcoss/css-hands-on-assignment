@@ -285,9 +285,23 @@
   .penguin * {
     position: absolute;
   }
+/* ////BROWSER FALLBACK */
+:root {
+    --red-color: red;
+  }
+  .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+
     </style>
   </head>
   <body>
+
+    <!-- BROWSER FALLBACK -->
+    <div class="red-box"></div>
     <!-- PENGUIN -->
     <div class="penguin">
       <div class="penguin-bottom">
